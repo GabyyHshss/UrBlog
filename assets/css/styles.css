@@ -277,3 +277,14 @@ body{
     opacity: 1;
     right: 100%;
 }
+
+/* SOBRE MÍ ;)*/
+
+.content__about{
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    overflow: auto;
+    padding: 6rem;
+    padding-right: 3rem;
+}
