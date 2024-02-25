@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* SOCIAL LINKS */
 .user-info__links{
-    margin-bottom: 3.6rem;
+    margin-bottom: 1.4rem;
 }
 .links__social{
     margin-top: 2rem;
@@ -138,6 +138,8 @@ h1, h2, h3, h4, h5, h6{
 
     display: flex;
     flex-direction: row;
+
+    gap: 1rem;
 }
 
 /* SOCIAL BUTTONS AND EFFECTS*/
@@ -145,7 +147,7 @@ h1, h2, h3, h4, h5, h6{
     height: 3rem;
     width: 3rem;
 
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     line-height: 3.2rem;
     opacity: 0.9;
 
@@ -181,7 +183,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* FOOTER */
 .user-info__footer{
-    position: absolute;
+    position: relative;
     bottom: 2rem;
     font-size: 1.3rem;
 }
