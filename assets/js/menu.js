@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", (event) => {
 
+    //Layout Menu 
+    let rightSide = document.querySelector('.layout__menu');
+    let leftSide = document.querySelector('.layout__aside');
+
     let button = document.querySelector(".layout__menu-toggle");
     let icon_bars = document.querySelector(".layout__menu-toggle .fa-bars");
     let icon_xmark = document.querySelector(".layout__menu-toggle .fa-xmark");
@@ -28,8 +32,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
         if (size <= 1060) {
             aside.classList.remove("layout__aside--visible");
             icon_bars.style.opacity = 1;
-            icon_xmark.style.opacity = 0;s
+            icon_xmark.style.opacity = 0;
         }
     })
 
+    rightSide.addEventListener('mouseenter', () => {
+
+        // Desactivar el Scroll en el elemento leftSide
+        leftSide.style.overflow = 'hidden';
+        leftSide.style.borderRight = '28px solid var(--color-secondary)';
+    });
+    
+    rightSide.addEventListener('mouseleave', () => {
+        // Activar el Scroll en el elemento leftSide
+        leftSide.style.overflow = 'auto'; // Puedes cambiar 'auto' a 'scroll' si prefieres
+        leftSide.style.borderRight = '0px solid red';
+    });
+    
 });
