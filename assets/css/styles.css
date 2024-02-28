@@ -307,8 +307,12 @@ h1, h2, h3, h4, h5, h6{
 .blog__header,
 .contact__header {
     display: inline-block;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
     position: relative;
+}
+
+.about__header {
+    margin-bottom: 2.5rem;
 }
 
 .about__title,
@@ -346,7 +350,7 @@ h1, h2, h3, h4, h5, h6{
 .about__personal-info {
     display: flex;
     flex-direction: row;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     width: 100%;
 }
 
@@ -355,9 +359,30 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .personal-info__description {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
+    text-align: justify;
+    color: var(--color-text);
+    padding: 0.8rem;
 }
+
+.description__main {
+    text-decoration: underline;
+    text-decoration-color: rgba(4, 180, 224, 0.5);
+    text-decoration-thickness: 2px; 
+}
+
+.personal-info__description-second {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: justify;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: var(--color-text);
+}
+
+.description__mark {
+    background-color: rgba(4, 180, 224, 0.5);}
 
 .personal-info__data {
     flex-basis: 45%;
@@ -398,6 +423,10 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 2.5rem;
 }
 
+.services__title {
+    margin-bottom: 0.8rem;
+}
+
 .services__title,
 .reviews__title,
 .clients__title,
@@ -406,6 +435,10 @@ h1, h2, h3, h4, h5, h6{
 .resume__subtitle,
 .form-header__title {
     font-size: 2.1rem;
+}
+
+.reviews__icon {
+    color: var(--color-secondary);
 }
 
 .services__title::after,
@@ -443,13 +476,21 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .service__real-icon {
+    text-align: center;
     color: var(--color-secondary);
-    font-size: 3.8rem;
+    font-size: 2.8rem;
+}
+
+.service__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .service__title {
     font-size: 1.6rem;
     margin: 0.5rem 0;
+    letter-spacing: 2px;
 }
 
 .service__description {
@@ -474,6 +515,10 @@ h1, h2, h3, h4, h5, h6{
     margin-right: 2.5rem;
     margin-top: 4.5rem;
     margin-bottom: 3rem;
+
+    transition: all 300ms ease-in-out;
+    cursor: default;
+    user-select: none;
 }
 
 .review__image-container {
@@ -481,9 +526,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .review__image {
-    max-width: 9rem;
-    max-height: 9rem;
-    border-radius: 9rem;
+    max-width: 16rem;
+    max-height: 16rem;
+    border-radius: 0.8rem;
 
     margin: 0 auto;
     margin-top: -4.5rem;
@@ -545,7 +590,7 @@ h1, h2, h3, h4, h5, h6{
 
 .clients__link{
     display: block;
-    cursor: pointer;
+    cursor: default;
     width: 100%;
     opacity: 0.7;
     transition: all 300ms linear;
@@ -587,7 +632,8 @@ h1, h2, h3, h4, h5, h6{
     margin-right: 0rem;
 }
 
-.prices__box:hover {
+.prices__box:hover,
+.reviews__review:hover {
     box-shadow: 0 18px 24px -5px rgba(0, 0, 0, 0.15);
     transform: translateY(-1rem);
 }
@@ -873,19 +919,20 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .certificates__certificate {
+    position: relative;
     flex-basis: calc(50% - 1.5rem);
     border: 1px solid var(--color-border-reviews);
     border-radius: 0.8rem;
-
+    cursor: default;
     display: flex;
     flex-direction: row;
     transition: all 300ms ease-in-out;
 }
 
 .certificate__logo{ 
-    width: 15rem;
+    width: 18rem;
     height: 100%;
-    padding: 2.5rem;
+    padding: 1rem;
     background-color: var(--color-background-certificates);
 
     display: flex;
@@ -918,14 +965,9 @@ h1, h2, h3, h4, h5, h6{
     color: var(--color-subtitles);
 }
 
-.certificates__certificate:hover {
-    box-shadow: 0 18px 24px -5px rgba(0, 0, 0, 0.15);
-    transform: translateY(-0.5rem);
-}
-
 /* PORT(A)FOLIO */
 .portafolio__navbar {
-    margin-bottom: 3rem;
+    margin-bottom: 2.4rem;
 }
 
 .portafolio__menu {
@@ -946,6 +988,7 @@ h1, h2, h3, h4, h5, h6{
 
 .portafolio__link {
     cursor: pointer;
+    font-size: 2rem;
 }
 
 .portafolio__link:hover {
